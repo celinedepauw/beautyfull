@@ -9,7 +9,6 @@ import { Category, Product, products } from 'src/data/data';
 })
 export class HomeComponent implements OnInit {
 
-  products: Product[] = products
   categories!:  string[]
 
   constructor() { }

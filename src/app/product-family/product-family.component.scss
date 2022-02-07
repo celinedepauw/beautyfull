@@ -1,0 +1,31 @@
+@import '../variables.scss';
+
+.family-main{
+    max-width: 700px;
+    margin: auto;
+
+    .family-main-return{
+        width: 60px;
+        margin-top: 2rem;
+        position: fixed;
+
+        .family-title{
+            padding-top: 1.5rem;
+            padding-bottom: 1.5rem;
+
+            .family-picture{
+                width: 60px;
+                display: block;
+            }
+
+            .family-name{
+                text-align: center;
+                padding-top: 1.5rem;
+                padding-left: 1rem;
+                font-size: 1.5rem;
+                color: $pink;
+                font-weight: bold;
+            }
+        }
+    }
+}

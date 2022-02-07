@@ -7,9 +7,12 @@ import { ProductFamilyComponent } from './product-family/product-family.componen
 
 const routes: Routes = [
   { path : '', component: HomeComponent },
-  { path : 'categorie/:categoryName', component: CategoryComponent },
-  { path: 'famille/:familyName', component: ProductFamilyComponent },
-  { path: 'produit/:idProduct', component: DetailsProductComponent },
+  { path: 'c', children: [
+    { path : ':categoryName', component: CategoryComponent },
+    { path: ':categoryName/:familyName', component: ProductFamilyComponent },
+    { path: ':categoryName/:familyName/produit/:idProduct', component: DetailsProductComponent },
+  ]},
+  
   { path:'**', redirectTo:'', pathMatch:'full'}
 ];
 
