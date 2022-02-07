@@ -1,0 +1,25 @@
+@import '../variables.scss';
+
+.home-main{
+    max-width: 700px;
+    margin: auto;
+    
+    .home-category{
+        font-size: 1.5rem;
+        border-radius: 7px;
+        margin: 1rem auto;
+        padding: 4rem;
+        text-align: center;
+        width: 50%;
+        background-color: white;
+        border: 0.3rem $pink solid;
+
+        .home-category-picture{
+            width: 60px;
+        }
+
+        .home-category-name{
+            margin-top: 0.5rem;
+        }
+    }
+}

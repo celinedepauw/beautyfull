@@ -6,6 +6,8 @@ export enum Category {
 
 export enum Visage {
     Crème = "Crème",
+    Nettoyant = "Nettoyant",
+    EauMicellaire = "Eau micellaire",
     Sérum = "Sérum",
     Lotion = "Lotion",
     Brume = "Brume",
@@ -40,10 +42,10 @@ export interface Product{
     name: string,
     brand: string,
     size: string,
-    picture: string,
-    price: number,
+    picture?: string,
+    price?: number,
     when: string,
-    comments: string,
+    comments?: string,
     category: Category,
     subCategory: Visage | Corps | Cheveux
 };

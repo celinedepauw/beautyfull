@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Product, products } from 'src/data/data';
+
 
 @Component({
   selector: 'app-root',
@@ -8,5 +8,5 @@ import { Product, products } from 'src/data/data';
 })
 export class AppComponent {
   title = 'beautyfull';
-  products: Product[] = products
+ 
 }

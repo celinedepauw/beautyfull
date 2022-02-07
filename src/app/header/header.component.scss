@@ -1,0 +1,18 @@
+@import '../variables.scss';
+
+.header{
+    text-align: center;
+    background-color: $green;
+    color: white;
+    padding: 1rem;
+
+    .header-title{
+        font-size: 2rem;
+    }
+
+    .header-subtitle{
+        font-style: italic;
+        font-size: 1.5rem;
+        font-weight: normal;
+    }
+}
