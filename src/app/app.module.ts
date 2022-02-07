@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { MatCardModule } from '@angular/material/card';
+import { FlexLayoutModule, FlexModule } from '@angular/flex-layout';
 
 import { HomeComponent } from './home/home.component';
 import { CategoryComponent } from './category/category.component';
@@ -28,7 +29,9 @@ import { FooterComponent } from './footer/footer.component';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MatCardModule
+    MatCardModule,
+    FlexLayoutModule,
+    FlexModule
   ],
   providers: [],
   bootstrap: [AppComponent]

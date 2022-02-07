@@ -1,0 +1,40 @@
+@import '../variables.scss';
+
+.category-main{
+    max-width: 700px;
+    margin: auto;
+
+    .category-title{
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+
+        .category-picture{
+            width: 60px;
+            display: block;
+        }
+    
+        .category-name{
+            text-align: center;
+            padding-top: 1.5rem;
+            padding-left: 1rem;
+            font-size: 1.5rem;
+            color: $pink;
+            font-weight: bold;
+        }
+    }
+
+    .category-family{
+        font-size: 1.5rem;
+        border-radius: 7px;
+        margin: 1rem auto;
+        padding: 4rem;
+        text-align: center;
+        width: 50%;
+        background-color: white;
+        border: 0.3rem $pink solid;
+
+        .category-family-name{
+            margin-top: 0.5rem;
+        }
+    }
+}
