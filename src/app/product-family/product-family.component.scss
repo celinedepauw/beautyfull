@@ -8,23 +8,58 @@
         width: 60px;
         margin-top: 2rem;
         position: fixed;
+    }
 
-        .family-title{
+    .family-title{
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+
+        .family-picture{
+            width: 60px;           
+        }
+
+        .family-name{
+            text-align: center;
             padding-top: 1.5rem;
-            padding-bottom: 1.5rem;
+            padding-left: 1rem;
+            font-size: 1.5rem;
+            color: $pink;
+            font-weight: bold;
+        }
+    }
 
-            .family-picture{
-                width: 60px;
-                display: block;
+    .family-products{
+        margin: 0;
+        
+        .family-one-product{
+            border: 0.3rem $pink solid;
+            border-radius: $radius;
+            padding: 0.5rem;
+            margin: 1rem auto;
+            width: 50%;
+            background-color: white;
+            text-align: center;
+
+            .product-name{
+                font-weight: bold;
+                font-size: 1.3rem;
             }
 
-            .family-name{
-                text-align: center;
-                padding-top: 1.5rem;
-                padding-left: 1rem;
-                font-size: 1.5rem;
-                color: $pink;
-                font-weight: bold;
+            .product-brand{
+                font-style: italic;
+            }
+
+            .product-size{
+
+            }
+
+            .product-picture{
+                width: 200px;
+                border-radius: $radius;
+            }
+
+            .product-description{
+
             }
         }
     }
