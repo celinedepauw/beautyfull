@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
-import { Category, Product, products } from 'src/data/data';
+import { Category, Cheveux, Corps, Product, products, Visage } from 'src/data/data';
 
 @Component({
   selector: 'app-product-family',
@@ -22,8 +22,18 @@ export class ProductFamilyComponent implements OnInit {
   ngOnInit(): void {
     const routeParams = this.route.snapshot.paramMap;
     if(this.family != ''){
-      this.category = routeParams.get('categoryName')!
-      this.family = routeParams.get('familyName')!
+      if(routeParams.get('familyName')! in Visage || routeParams.get('familyName')! in Corps || routeParams.get('familyName')! in Cheveux){
+        this.family = routeParams.get('familyName')!
+        if(routeParams.get('categoryName')! in Category){
+          this.category = routeParams.get('categoryName')!
+        }
+        else{
+          this.router.navigateByUrl('')
+        }
+      }
+      else{
+        this.router.navigateByUrl('')
+      }
     }
     else{
       this.router.navigateByUrl('')

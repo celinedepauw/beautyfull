@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
-import { Category, Cheveux, Corps, Visage } from 'src/data/data';
+import { Category, Cheveux, Corps, Product, products, Visage } from 'src/data/data';
 
 @Component({
   selector: 'app-category',
@@ -11,6 +11,7 @@ export class CategoryComponent implements OnInit {
 
   category!: string;
   families!: string[];
+  products!: Product[];
 
   constructor(
     private route: ActivatedRoute,
@@ -20,7 +21,12 @@ export class CategoryComponent implements OnInit {
   ngOnInit(): void {
     const routeParams = this.route.snapshot.paramMap;
     if(this.category != ''){
-      this.category = routeParams.get('categoryName')!
+      if(routeParams.get('categoryName')! in Category){
+        this.category = routeParams.get('categoryName')!
+      }
+      else{
+        this.router.navigateByUrl('')
+      }
     }
     else{
       this.router.navigateByUrl('')
@@ -30,6 +36,7 @@ export class CategoryComponent implements OnInit {
     if(this.category == Category.Visage){
       Object.values(Visage).forEach((value => fam.push(value)));
       this.families = fam;
+
     }
     else if(this.category == Category.Corps){
       Object.values(Corps).forEach((value => fam.push(value)));
