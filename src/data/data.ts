@@ -12,9 +12,9 @@ export enum Visage {
     Lotion = "Lotion",
     Brume = "Brume",
     ContourYeux = "Contour des yeux",
-    HuileV = "Huile",
-    GommageV = "Gommage",
-    MasqueV = "Masque",
+    Huile = "Huile",
+    Gommage = "Gommage",
+    Masque = "Masque Visage",
     BaumeLèvres = "Baume à lèvres"
 };
 
@@ -22,19 +22,19 @@ export enum Corps {
     Lait = "Lait corps",
     Mains = "Crème mains",
     Pieds = "Crème pieds",
-    GommageC = "Gommage",
+    Gommage = "Gommage corps",
     CrèmeSolaire = "Crème Solaire",
     CrèmeAprèsSoleil = "Crème après soleil",
-    HuileC = "Huile",
+    Huile = "Huile corps",
     Déodorant = "Déodorant",
     Savon = "Savon"
 };
 
 export enum Cheveux {
-    HuileCh = "Huile",
+    Huile = "Huile cheveux",
     Shampoing = "Shampoing",
     AprèsShampoing = "Après-Shampoing",
-    MasqueCh = "Masque",
+    Masque = "Masque cheveux",
     CrèmeSoin = "Crème de soins",
     Autre = "Autre"
 }
@@ -97,7 +97,7 @@ export const products: Product[] = [
         price: 29,
         when: 'stock',
         category: Category.Visage,
-        subCategory: Visage.GommageV
+        subCategory: Visage.Gommage
     },
     {
         id: 4,
@@ -166,7 +166,7 @@ export const products: Product[] = [
         price: 18,
         when: 'stock',
         category: Category.Cheveux,
-        subCategory: Cheveux.MasqueCh
+        subCategory: Cheveux.Masque
     },
     {
         id: 10,
@@ -199,7 +199,7 @@ export const products: Product[] = [
         price: 35,
         when: 'stock',
         category: Category.Visage,
-        subCategory: Visage.MasqueV
+        subCategory: Visage.Masque
     },
     {
         id: 13,
@@ -242,7 +242,7 @@ export const products: Product[] = [
         picture: '../../assets/images/masque_cheveux_chogan.JPG',
         when: 'stock',
         category: Category.Cheveux,
-        subCategory: Cheveux.MasqueCh
+        subCategory: Cheveux.Masque
     },
     {
         id: 17,
@@ -269,7 +269,7 @@ export const products: Product[] = [
         name: 'Gel crème hydratant au concombre BIO',
         brand: 'La Rosée',
         size: '60ml',
-        picture: '../../assets/images/gel_creme_la_rosee.JPG',
+        picture: '../../assets/images/gel_creme_visage_la_rosee.JPG',
         when: 'stock',
         category: Category.Visage,
         subCategory: Visage.Crème
@@ -336,7 +336,7 @@ export const products: Product[] = [
         when: 'stock',
         price: 11,
         category: Category.Corps,
-        subCategory: Corps.HuileC
+        subCategory: Corps.Huile
     },
     {
         id: 26,
@@ -401,7 +401,7 @@ export const products: Product[] = [
         when: 'stock',
         description: 'Poudre efferfescente',
         category: Category.Visage,
-        subCategory: Visage.GommageV
+        subCategory: Visage.Gommage
     },
     {
         id: 32,
@@ -412,7 +412,7 @@ export const products: Product[] = [
         when: 'stock',
         price: 15,
         category: Category.Visage,
-        subCategory: Visage.MasqueV
+        subCategory: Visage.Masque
     },
     {
         id: 33,
@@ -526,7 +526,7 @@ export const products: Product[] = [
         picture: '../../assets/images/masque_amika.JPG',
         when: 'stock',
         category: Category.Cheveux,
-        subCategory: Cheveux.MasqueCh
+        subCategory: Cheveux.Masque
     },
     {
         id: 44,
@@ -536,7 +536,7 @@ export const products: Product[] = [
         picture: '../../assets/images/masque_kerastase.JPG',
         when: 'stock',
         category: Category.Cheveux,
-        subCategory: Cheveux.MasqueCh
+        subCategory: Cheveux.Masque
     },
     {
         id: 45,

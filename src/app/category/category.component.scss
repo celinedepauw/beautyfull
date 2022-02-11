@@ -8,6 +8,11 @@
         width: 60px;
         margin-top: 2rem;
         position: fixed;
+        border-radius: 100%;
+
+        &:hover{
+            box-shadow: 5px 5px 5px $green;
+        }
     }
 
     .category-title{
@@ -38,6 +43,11 @@
         width: 50%;
         background-color: white;
         border: 0.3rem $pink solid;
+        cursor: pointer;
+
+        &:hover{
+            box-shadow: 5px 5px 5px $pink;
+        }
 
         .category-family-name{
             margin-top: 0.5rem;

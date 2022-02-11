@@ -1,8 +1,21 @@
 @import '../variables.scss';
 
 .footer{
-    text-align: center;
-    background-color: $green;
-    color: white;
-    padding: 1rem;
+    min-height: 30%;
+    position:relative;
+
+    .footer-div{
+        text-align: center;
+        background-color: $green;
+        color: white;
+        padding: 1rem;
+        position:absolute;
+        bottom:0;
+        width:100%;
+       
+
+        .footer-icon{
+            width: 20px;
+        }
+    }
 }

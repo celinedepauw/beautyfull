@@ -30,7 +30,8 @@ export class ProductFamilyComponent implements OnInit {
     }
 
     this.products = this.productsData.filter(product => product.subCategory == this.family)
-    this.category = this.products[0].category
+    this.category = routeParams.get('categoryName')!
+  
   }
 
 }
