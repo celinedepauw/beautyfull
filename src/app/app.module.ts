@@ -11,7 +11,6 @@ import { FlexLayoutModule, FlexModule } from '@angular/flex-layout';
 import { HomeComponent } from './home/home.component';
 import { CategoryComponent } from './category/category.component';
 import { ProductFamilyComponent } from './product-family/product-family.component';
-import { DetailsProductComponent } from './details-product/details-product.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 
@@ -21,7 +20,6 @@ import { FooterComponent } from './footer/footer.component';
     HomeComponent,
     CategoryComponent,
     ProductFamilyComponent,
-    DetailsProductComponent,
     HeaderComponent,
     FooterComponent
   ],

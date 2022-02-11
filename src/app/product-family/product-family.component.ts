@@ -11,7 +11,7 @@ export class ProductFamilyComponent implements OnInit {
 
   family!: string;
   category!: string;
-  productsData: Product[] = products;
+  productsData: Product[] = products.filter(product => product.when == 'stock');
   products!: Product[];
 
   constructor(
