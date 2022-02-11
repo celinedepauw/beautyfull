@@ -15,12 +15,32 @@
         border: 0.3rem $pink solid;
         cursor: pointer;
 
+        &:hover{
+            box-shadow: 5px 5px 5px $pink;
+        }
+
         .home-category-picture{
             width: 60px;
         }
 
         .home-category-name{
             margin-top: 0.5rem;
+        }
+    }
+
+    .home-toBuy{
+        font-size: 1.5rem;
+        border-radius: $radius;
+        margin: 1rem auto;
+        padding: 4rem;
+        text-align: center;
+        width: 50%;
+        background-color: $green;
+        border: 0.3rem white solid;
+        cursor: pointer;
+
+        &:hover{
+            box-shadow: 5px 5px 5px white;
         }
     }
 }

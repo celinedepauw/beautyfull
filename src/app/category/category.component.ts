@@ -20,23 +20,17 @@ export class CategoryComponent implements OnInit {
 
   ngOnInit(): void {
     const routeParams = this.route.snapshot.paramMap;
-    if(this.category != ''){
       if(routeParams.get('categoryName')! in Category){
         this.category = routeParams.get('categoryName')!
       }
       else{
         this.router.navigateByUrl('')
       }
-    }
-    else{
-      this.router.navigateByUrl('')
-    }
 
     const fam: string[] = [];
     if(this.category == Category.Visage){
       Object.values(Visage).forEach((value => fam.push(value)));
       this.families = fam;
-
     }
     else if(this.category == Category.Corps){
       Object.values(Corps).forEach((value => fam.push(value)));

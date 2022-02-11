@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
+import { ignoreElements } from 'rxjs';
 import { Category, Cheveux, Corps, Product, products, Visage } from 'src/data/data';
 
 @Component({
@@ -21,27 +22,8 @@ export class ProductFamilyComponent implements OnInit {
 
   ngOnInit(): void {
     const routeParams = this.route.snapshot.paramMap;
-    if(this.family != ''){
-      if(routeParams.get('familyName')! in Visage || routeParams.get('familyName')! in Corps || routeParams.get('familyName')! in Cheveux){
-        this.family = routeParams.get('familyName')!
-        if(routeParams.get('categoryName')! in Category){
-          this.category = routeParams.get('categoryName')!
-        }
-        else{
-          this.router.navigateByUrl('')
-        }
-      }
-      else{
-        this.router.navigateByUrl('')
-      }
-    }
-    else{
-      this.router.navigateByUrl('')
-    }
-
-    this.products = this.productsData.filter(product => product.subCategory == this.family)
     this.category = routeParams.get('categoryName')!
-  
+    this.family = routeParams.get('familyName')! 
+    this.products = this.productsData.filter(product => product.subCategory == this.family)
   }
-
 }

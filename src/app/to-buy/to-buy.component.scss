@@ -1,0 +1,66 @@
+@import '../variables.scss';
+
+.toBuy-main{
+    max-width: 700px;
+    margin: auto;
+
+    .toBuy-main-return{
+        width: 60px;
+        margin-top: 2rem;
+        position: fixed;
+        border-radius: 100%;
+        
+        &:hover{
+            box-shadow: 5px 5px 5px $green;
+        }
+    }
+
+    .toBuy-main-title{
+        text-align: center;
+        padding-top: 1.5rem;
+        padding-left: 1rem;
+        font-size: 1.5rem;
+        color: $pink;
+        font-weight: bold;
+    }
+
+    .toBuy-category{
+        font-size: 1.5rem;
+        border-radius: $radius;
+        margin: 1rem auto;
+        padding: 1rem;
+        text-align: center;
+        width: 50%;
+        background-color: white;
+        border: 0.3rem $pink solid;
+
+        .toBuy-category-title{
+            padding-top: 1.5rem;
+            padding-bottom: 1.5rem;
+
+            .category-picture{
+                width: 60px;
+                display: block;
+            }
+
+            .category-name{
+                text-align: center;
+                padding-top: 1.5rem;
+                padding-left: 1rem;
+                font-size: 1.5rem;
+                color: $pink;
+                font-weight: bold;
+            }
+        }
+
+        .toBuy-category-list{
+            list-style: none;
+            text-align: left;
+
+            .toBuy-category-item{
+                padding: 0.5rem;
+                color: $green;
+            }
+        }
+    }
+}
