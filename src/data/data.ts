@@ -11,11 +11,11 @@ export enum Visage {
     Sérum = "Sérum",
     Lotion = "Lotion",
     Brume = "Brume",
-    ContourYeux = "Contour des yeux",
+    ContourDesYeux = "Contour des yeux",
     Huile = "Huile",
     Gommage = "Gommage",
     Masque = "Masque Visage",
-    BaumeLèvres = "Baume à lèvres"
+    BaumeALèvres = "Baume à lèvres"
 };
 
 export enum Corps {
@@ -25,17 +25,17 @@ export enum Corps {
     Gommage = "Gommage corps",
     CrèmeSolaire = "Crème Solaire",
     CrèmeAprèsSoleil = "Crème après soleil",
-    Huile = "Huile corps",
+    HuileCorps = "Huile corps",
     Déodorant = "Déodorant",
     Savon = "Savon"
 };
 
 export enum Cheveux {
-    Huile = "Huile cheveux",
+    HuileCheveux = "Huile cheveux",
     Shampoing = "Shampoing",
-    AprèsShampoing = "Après-Shampoing",
+    AprèsShampoing = "Après Shampoing",
     Masque = "Masque cheveux",
-    CrèmeSoin = "Crème de soins",
+    CrèmeDeSoins = "Crème de soins",
     Autre = "Autre"
 }
 
@@ -48,7 +48,6 @@ export interface Product{
     price?: number,
     when: string,
     description?: string,
-    comments?: string,
     category: Category,
     subCategory: Visage | Corps | Cheveux
 };
@@ -129,9 +128,9 @@ export const products: Product[] = [
         size: '150ml',
         picture: '../../assets/images/apres_shampoing_lynaya.JPG',
         price: 15,
-        when: 'stock',
+        when: 'used',
         category: Category.Cheveux,
-        subCategory: Cheveux.Shampoing
+        subCategory: Cheveux.AprèsShampoing
     },
     {
         id: 7,
@@ -177,7 +176,7 @@ export const products: Product[] = [
         price: 15,
         when: 'stock',
         category: Category.Visage,
-        subCategory: Visage.BaumeLèvres
+        subCategory: Visage.BaumeALèvres
     },
     {
         id: 11,
@@ -270,7 +269,7 @@ export const products: Product[] = [
         brand: 'La Rosée',
         size: '60ml',
         picture: '../../assets/images/gel_creme_visage_la_rosee.JPG',
-        when: 'stock',
+        when: 'used',
         category: Category.Visage,
         subCategory: Visage.Crème
     },
@@ -325,7 +324,7 @@ export const products: Product[] = [
         when: 'stock',
         price: 11,
         category: Category.Visage,
-        subCategory: Visage.BaumeLèvres
+        subCategory: Visage.BaumeALèvres
     },
     {
         id: 25,
@@ -336,7 +335,7 @@ export const products: Product[] = [
         when: 'stock',
         price: 11,
         category: Category.Corps,
-        subCategory: Corps.Huile
+        subCategory: Corps.HuileCorps
     },
     {
         id: 26,
@@ -368,7 +367,7 @@ export const products: Product[] = [
         picture: '../../assets/images/roll_on_yeux_garancia.JPG',
         when: 'stock',
         category: Category.Visage,
-        subCategory: Visage.ContourYeux
+        subCategory: Visage.ContourDesYeux
     },
     {
         id: 29,
@@ -387,7 +386,7 @@ export const products: Product[] = [
         brand: 'Natura Siberica',
         size: '100ml',
         picture: '../../assets/images/nettoyant_visage_natura_siberica.JPG',
-        when: 'stock',
+        when: 'used',
         price: 8,
         category: Category.Visage,
         subCategory: Visage.Nettoyant
@@ -547,6 +546,66 @@ export const products: Product[] = [
         when: 'stock',
         category: Category.Cheveux,
         subCategory: Cheveux.Autre
+    },
+    {
+        id: 46,
+        name: 'Lait après soleil',
+        brand: 'Nuxe',
+        size: '50ml',
+        picture: '../../assets/images/apres_soleil_nuxe.JPG',
+        when: 'stock',
+        category: Category.Corps,
+        subCategory: Corps.CrèmeAprèsSoleil
+    },
+    {
+        id: 47,
+        name: 'Brume solaire SPF30',
+        brand: 'Garnier',
+        size: '200ml',
+        picture: '../../assets/images/solaire_garnier_30.JPG',
+        when: 'stock',
+        category: Category.Corps,
+        subCategory: Corps.CrèmeSolaire
+    },
+    {
+        id: 48,
+        name: 'Crème solaire SPF30',
+        brand: 'Saint Geron',
+        size: '50ml',
+        picture: '../../assets/images/solaire_saint_geron_30.JPG',
+        when: 'stock',
+        category: Category.Corps,
+        subCategory: Corps.CrèmeSolaire
+    },
+    {
+        id: 49,
+        name: 'Crème solaire visage SPF50',
+        brand: 'Nivea',
+        size: '50ml',
+        picture: '../../assets/images/solaire_visage_nivea_50.JPG',
+        when: 'stock',
+        category: Category.Corps,
+        subCategory: Corps.CrèmeSolaire
+    },
+    {
+        id: 50,
+        name: 'Brume solaire SPF30',
+        brand: 'L\'Oréal',
+        size: '200ml',
+        picture: '../../assets/images/solaire_loreal_30.JPG',
+        when: 'stock',
+        category: Category.Corps,
+        subCategory: Corps.CrèmeSolaire
+    },
+    {
+        id: 51,
+        name: 'Crème solaire SPF50+',
+        brand: 'Seventy One',
+        size: '50ml',
+        picture: '../../assets/images/solaire_seventy_one_50.JPG',
+        when: 'stock',
+        category: Category.Corps,
+        subCategory: Corps.CrèmeSolaire
     },
 ];
 

@@ -22,8 +22,13 @@ export class ProductFamilyComponent implements OnInit {
 
   ngOnInit(): void {
     const routeParams = this.route.snapshot.paramMap;
-    this.category = routeParams.get('categoryName')!
-    this.family = routeParams.get('familyName')! 
-    this.products = this.productsData.filter(product => product.subCategory == this.family)
+    if(routeParams.get('categoryName')! in Category){
+      this.category = routeParams.get('categoryName')!;
+      this.family = routeParams.get('familyName')!; 
+      this.products = this.productsData.filter(product => product.subCategory == this.family)
+    }
+    else{
+      this.router.navigateByUrl('')
+    }
   }
 }

@@ -1,14 +1,34 @@
 <main class="toBuy-main">
     <img class="toBuy-main-return" src="../../assets/images/back.png" alt="goback" routerLink="/">
     <h3 class="toBuy-main-title">A acheter</h3>
-    <div class="toBuy-category" *ngFor="let category of categories">
+    <div class="toBuy-category">
         <div class="toBuy-category-title" fxLayout="row" fxLayoutAlign="center center">
-            <img class="category-picture" src="../../assets/images/{{category}}.png">
-            <div class="category-name">Visage</div>
+            <img class="category-picture" src="../../assets/images/Visage.png">
+            <div class="category-name">Soins Visage</div>
         </div>
-        <ul class="toBuy-category-list">
+        <!--<ul class="toBuy-category-list">
             <li class="toBuy-category-item">nettoyant</li>
             <li class="toBuy-category-item">sérum</li>
-        </ul>
+        </ul>-->
+    </div>
+    <div class="toBuy-category">
+        <div class="toBuy-category-title" fxLayout="row" fxLayoutAlign="center center">
+            <img class="category-picture" src="../../assets/images/Corps.png">
+            <div class="category-name">Soins Corps</div>
+        </div>
+       <!--<ul class="toBuy-category-list">
+            <li class="toBuy-category-item">nettoyant</li>
+            <li class="toBuy-category-item">sérum</li>
+        </ul>-->
+    </div>
+    <div class="toBuy-category">
+        <div class="toBuy-category-title" fxLayout="row" fxLayoutAlign="center center">
+            <img class="category-picture" src="../../assets/images/Cheveux.png">
+            <div class="category-name">Soins Cheveux</div>
+        </div>
+      <!--<ul class="toBuy-category-list">
+            <li class="toBuy-category-item">nettoyant</li>
+            <li class="toBuy-category-item">sérum</li>
+        </ul>-->
     </div>
 </main>

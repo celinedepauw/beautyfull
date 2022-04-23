@@ -1,0 +1,33 @@
+<div class="opinion-main">
+    <div class="opinion-category">
+        <img class="opinion-category-picture" src="../../assets/images/Visage.png">
+        <div class="opinion-category-name">Soins Visage</div>
+        <div class="opinion-list-products">
+            <div class="opinion-product" *ngFor="let product of faceProducts">
+                <img class="opinion-lotus-image" src="../../assets/images/lotus.png"> 
+                <div class="opinion-product-family">{{product.name}}</div>
+            </div>
+        </div>    
+    </div>
+    <div class="opinion-category">
+        <img class="opinion-category-picture" src="../../assets/images/Corps.png">
+        <div class="opinion-category-name">Soins Corps</div>
+        <div class="opinion-list-products">
+            <div class="opinion-product" *ngFor="let product of bodyProducts">
+                <img class="opinion-lotus-image" src="../../assets/images/lotus.png"> 
+                <div class="opinion-product-family">{{product.name}}</div>
+            </div>
+        </div>    
+    </div>
+    <div class="opinion-category">
+        <img class="opinion-category-picture" src="../../assets/images/Cheveux.png">
+        <div class="opinion-category-name">Soins Cheveux</div>
+        <div class="opinion-list-products">
+            <div class="opinion-product" *ngFor="let product of hairProducts">
+                <img class="opinion-lotus-image" src="../../assets/images/lotus.png"> 
+                <div class="opinion-product-family">{{product.name}} {{product.brand | uppercase}}</div>
+            </div>
+        </div>    
+    </div>
+</div>
+

@@ -3,6 +3,8 @@
 .category-main{
     max-width: 700px;
     margin: auto;
+    overflow-y: auto;
+    height: 75vh;
 
     .category-main-return{
         width: 60px;

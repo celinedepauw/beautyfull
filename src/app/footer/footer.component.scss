@@ -1,19 +1,21 @@
 @import '../variables.scss';
 
 .footer{
-    min-height: 30%;
-    position:relative;
+    //min-height: 10%;
+    position:fixed;
+    bottom: 0;
+    width:100%;
+    
 
     .footer-div{
         text-align: center;
         background-color: $green;
         color: white;
         padding: 1rem;
-        position:absolute;
-        bottom:0;
-        width:100%;
+        //position:absolute;
+        //bottom:0;
+        
        
-
         .footer-icon{
             width: 20px;
         }

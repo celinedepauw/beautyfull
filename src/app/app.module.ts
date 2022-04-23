@@ -23,7 +23,7 @@ import { ToBuyComponent } from './to-buy/to-buy.component';
     ProductFamilyComponent,
     HeaderComponent,
     FooterComponent,
-    ToBuyComponent
+    ToBuyComponent,
   ],
   imports: [
     BrowserModule,

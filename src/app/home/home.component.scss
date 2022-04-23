@@ -3,6 +3,8 @@
 .home-main{
     max-width: 700px;
     margin: auto;
+    overflow-y: auto;
+    height: 75vh;
     
     .home-category{
         font-size: 1.5rem;
@@ -28,19 +30,20 @@
         }
     }
 
-    .home-toBuy{
+    /*.home-toBuy{
         font-size: 1.5rem;
         border-radius: $radius;
         margin: 1rem auto;
         padding: 4rem;
         text-align: center;
         width: 50%;
-        background-color: $green;
+        background-color: $pink;
         border: 0.3rem white solid;
         cursor: pointer;
 
         &:hover{
             box-shadow: 5px 5px 5px white;
         }
-    }
+    }*/
+
 }

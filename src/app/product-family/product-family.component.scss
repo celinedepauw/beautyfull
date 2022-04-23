@@ -3,6 +3,9 @@
 .family-main{
     max-width: 700px;
     margin: auto;
+    overflow-y: auto;
+    height: 75vh;
+   
 
     .family-main-return{
         width: 60px;
@@ -41,7 +44,7 @@
             border-radius: $radius;
             padding: 0.5rem;
             margin: 1rem auto;
-            width: 50%;
+            width: 80%;
             background-color: white;
             text-align: center;
 
@@ -59,7 +62,7 @@
             }
 
             .product-picture{
-                width: 200px;
+                width: 70%;
                 border-radius: $radius;
             }
 

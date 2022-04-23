@@ -1,0 +1,49 @@
+@import '../variables.scss';
+
+.opinion-main{
+    max-width: 700px;
+    margin: auto;
+    
+    .opinion-category{
+        font-size: 1.5rem;
+        border-radius: $radius;
+        margin: 1rem auto;
+        padding: 4rem;
+        text-align: center;
+        width: 50%;
+        background-color: white;
+        border: 0.3rem $pink solid;
+        cursor: pointer;
+
+        &:hover{
+            box-shadow: 5px 5px 5px $pink;
+        }
+
+        .opinion-category-picture{
+            width: 60px;
+        }
+
+        .opinion-category-name{
+            margin-top: 0.5rem;
+        }
+
+        .opinion-list-products{
+            margin-top: 1rem;
+            color: $pink;
+            font-weight: bold;
+
+            .opinion-product{
+                padding-bottom: 0.5rem;  
+
+                .opinion-lotus-image{
+                    width: 30px;
+                    margin-top: 0.5rem;
+                }
+
+                .opinion-product-family{
+                    
+                }
+            }
+        }
+    }
+}
