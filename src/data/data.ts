@@ -343,7 +343,7 @@ export const products: Product[] = [
         brand: 'Pur Eden',
         size: '50ml',
         picture: '../../assets/images/deo_pur_eden.JPG',
-        when: 'stock',
+        when: 'used',
         price: 5,
         category: Category.Corps,
         subCategory: Corps.Déodorant
