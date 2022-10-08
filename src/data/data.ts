@@ -1,3 +1,5 @@
+import { core } from "@angular/compiler";
+
 export enum Category {
     Visage = "Visage",
     Corps = "Corps",
@@ -27,7 +29,9 @@ export enum Corps {
     CrèmeAprèsSoleil = "Crème après soleil",
     HuileCorps = "Huile corps",
     Déodorant = "Déodorant",
-    Savon = "Savon"
+    Savon = "Savon",
+    Brume = 'Brume',
+    Douche = 'Douche'
 };
 
 export enum Cheveux {
@@ -279,7 +283,7 @@ export const products: Product[] = [
         brand: 'Polaar',
         size: '15ml',
         picture: '../../assets/images/creme_hydratante_polaar.JPG',
-        when: 'stock',
+        when: 'used',
         category: Category.Visage,
         subCategory: Visage.Crème
     },
@@ -450,7 +454,7 @@ export const products: Product[] = [
         name: 'Baume multi-usages',
         brand: 'Les Petits Prodiges',
         size: '30ml',
-        picture: '../../assets/images/baume_multiusages_petits_prodiges.JPG',
+        picture: '../../assets/images/baume_multi_usages_petits_prodiges.JPG',
         when: 'stock',
         price: 15,
         category: Category.Corps,
@@ -606,6 +610,96 @@ export const products: Product[] = [
         when: 'stock',
         category: Category.Corps,
         subCategory: Corps.CrèmeSolaire
+    },
+    {
+        id: 52,
+        name: 'Brume parfumée MySunrise',
+        brand: 'Purabali',
+        size: '50ml',
+        picture: '../../assets/images/brume_parfumee.JPG',
+        when: 'stock',
+        category: Category.Corps,
+        subCategory: Corps.Brume
+    },
+    {
+        id: 53,
+        name: 'Crème mains réparatrice intense',
+        brand: 'Aïny',
+        size: '40ml',
+        picture: '../../assets/images/creme_mains_ainy.JPG',
+        when: 'stock',
+        category: Category.Corps,
+        subCategory: Corps.Mains
+    },
+    {
+        id: 54,
+        name: 'Gelée soyeuse à la rose',
+        brand: 'Florays',
+        size: '50ml',
+        picture: '../../assets/images/gelee_rose_florays.JPG',
+        when: 'stock',
+        category: Category.Visage,
+        subCategory: Visage.Crème
+    },
+    {
+        id: 55,
+        name: 'Déodorant palmarosa',
+        brand: 'Endro',
+        size: '50ml',
+        picture: '../../assets/images/deodorant_palmarosa.JPG',
+        when: 'stock',
+        category: Category.Corps,
+        subCategory: Corps.Déodorant
+    },
+    {
+        id: 56,
+        name: 'Soin du corps et mains',
+        brand: 'La Reine Louhanne',
+        size: '100ml',
+        picture: '../../assets/images/soin_corps_louhanne.JPG',
+        when: 'stock',
+        category: Category.Corps,
+        subCategory: Corps.Lait
+    },
+    {
+        id: 57,
+        name: 'Gelée nacrée après soleil',
+        brand: 'Kadalys',
+        size: '100ml',
+        picture: '../../assets/images/gelee_kadalys.JPG',
+        when: 'stock',
+        category: Category.Corps,
+        subCategory: Corps.CrèmeAprèsSoleil
+    },
+    {
+        id: 58,
+        name: 'Spray solaire SFP30',
+        brand: 'Alphanova Sun',
+        size: '50g',
+        picture: '../../assets/images/spray_solaire_alphanova.JPG',
+        when: 'stock',
+        category: Category.Corps,
+        subCategory: Corps.CrèmeSolaire
+    },
+    {
+        id: 59,
+        name: 'Fluide visage effet bonne mine',
+        brand: 'FG Cosmétique',
+        size: '50ml',
+        picture: '../../assets/images/fluide_bonne_mine.JPG',
+        when: 'stock',
+        category: Category.Visage,
+        subCategory: Visage.Crème
+    },
+    {
+        id: 60,
+        name: 'Gel intime réconfortant',
+        brand: 'Mlle Cerise & Co',
+        size: '1000ml',
+        picture: '../../assets/images/gel_intime.JPG',
+        when: 'stock',
+        category: Category.Corps,
+        subCategory: Corps.Douche
     },
 ];
 
