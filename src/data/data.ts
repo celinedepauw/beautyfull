@@ -94,7 +94,7 @@ export const products: Product[] = [
         size: '50ml',
         picture: '../../assets/images/gommage_visage_exertier.JPG',
         price: 29,
-        when: 'stock',
+        when: 'used',
         category: Category.Visage,
         subCategory: Visage.Gommage
     },
@@ -219,7 +219,7 @@ export const products: Product[] = [
         size: '75ml',
         picture: '../../assets/images/nettoyant_visage_huygens.JPG',
         price: 13,
-        when: 'stock',
+        when: 'used',
         category: Category.Visage,
         subCategory: Visage.Nettoyant
     },
@@ -289,7 +289,7 @@ export const products: Product[] = [
         brand: 'Polaar',
         size: '15ml',
         picture: '../../assets/images/creme_lissante_polaar.JPG',
-        when: 'stock',
+        when: 'used',
         category: Category.Visage,
         subCategory: Visage.Crème
     },
@@ -375,7 +375,7 @@ export const products: Product[] = [
         brand: 'Natura Siberica',
         size: '200ml',
         picture: '../../assets/images/lotion_eclat_natura_siberica.JPG',
-        when: 'stock',
+        when: 'used',
         price: 11,
         category: Category.Visage,
         subCategory: Visage.Lotion
@@ -419,7 +419,7 @@ export const products: Product[] = [
         brand: 'Baija',
         size: '75ml',
         picture: '../../assets/images/creme_corps_baija.JPG',
-        when: 'stock',
+        when: 'used',
         price: 14,
         category: Category.Corps,
         subCategory: Corps.Lait
@@ -543,7 +543,7 @@ export const products: Product[] = [
         brand: 'Massato',
         size: '100ml',
         picture: '../../assets/images/spray_massato.JPG',
-        when: 'stock',
+        when: 'used',
         category: Category.Cheveux,
         subCategory: Cheveux.Autre
     },
@@ -553,7 +553,7 @@ export const products: Product[] = [
         brand: 'Nuxe',
         size: '50ml',
         picture: '../../assets/images/apres_soleil_nuxe.JPG',
-        when: 'stock',
+        when: 'used',
         category: Category.Corps,
         subCategory: Corps.CrèmeAprèsSoleil
     },
@@ -583,7 +583,7 @@ export const products: Product[] = [
         brand: 'Nivea',
         size: '50ml',
         picture: '../../assets/images/solaire_visage_nivea_50.JPG',
-        when: 'stock',
+        when: 'used',
         category: Category.Corps,
         subCategory: Corps.CrèmeSolaire
     },
