@@ -25,7 +25,7 @@ export class ProductFamilyComponent implements OnInit {
     if(routeParams.get('categoryName')! in Category){
       this.category = routeParams.get('categoryName')!;
       this.family = routeParams.get('familyName')!; 
-      this.products = this.productsData.filter(product => product.subCategory == this.family)
+      this.products = this.productsData.filter(product => product.subCategory == this.family);
     }
     else{
       this.router.navigateByUrl('')

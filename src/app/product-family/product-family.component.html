@@ -4,13 +4,16 @@
         <img class="family-picture" src="../../assets/images/{{category}}.png">
         <h3 class="family-name">{{family}}</h3>
     </div>
-    <div class="family-products" *ngFor="let product of products">
-        <div class="family-one-product">
-            <div class="product-name">{{product.name}}</div>
-            <div class="product-brand">{{product.brand}}</div>
-            <div class="product-size">{{product.size}}</div>
-            <img class="product-picture" *ngIf="product.picture" src="{{product.picture}}">
-            <div class="product-description" *ngIf="product.description">Description : {{product.description}}</div>
+    <ng-container *ngIf="products.length > 0">
+        <div class="family-products" *ngFor="let product of products">
+            <div class="family-one-product">
+                <div class="product-name">{{product.name}}</div>
+                <div class="product-brand">{{product.brand}}</div>
+                <div class="product-size">{{product.size}}</div>
+                <img class="product-picture" *ngIf="product.picture" src="{{product.picture}}">
+                <div class="product-description" *ngIf="product.description">Description : {{product.description}}</div>
+            </div>
         </div>
-    </div>
+    </ng-container>
+    <div *ngIf="products.length === 0" class="no-product">Plus de stock, à racheter</div>
 </main>
