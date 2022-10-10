@@ -1,0 +1,13 @@
+<main fxLayout="column">
+    <div mat-dialog-close fxFlexAlign="end">
+        <mat-icon>close</mat-icon>
+    </div>
+    <mat-dialog-content>
+        <div>Supprimer ce produit du stock ?</div>
+    </mat-dialog-content>
+    <mat-dialog-actions>
+        <button mat-button (click)="deleteEmitter.emit()">Oui</button>
+        <button mat-button mat-dialog-close>Annuler</button>
+    </mat-dialog-actions>
+</main>
+

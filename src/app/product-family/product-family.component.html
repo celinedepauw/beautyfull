@@ -9,8 +9,10 @@
             <div class="family-one-product">
                 <div class="product-name">{{product.name}}</div>
                 <div class="product-brand">{{product.brand}}</div>
-                <div class="product-size">{{product.size}}</div>
+                <div class="product-size">{{product.size}}</div> 
+                <div (click)="useProduct(product)"><mat-icon>delete</mat-icon></div>
                 <img class="product-picture" *ngIf="product.picture" src="{{product.picture}}">
+                <!-- <img class="product-picture" *ngIf="!product.picture" src="../../assets/images/picture.png"> -->
                 <div class="product-description" *ngIf="product.description">Description : {{product.description}}</div>
             </div>
         </div>
